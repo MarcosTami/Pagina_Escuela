@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(241, 237, 233);
+    zoom: 80%;
+}
+
+.registro {
+    margin-top: 150px;
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.registro h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.registro form {
+    font-size: 20px;
+}
+
+.login form .form-group {
+    margin-bottom: 12px;
+}
+
+.registro form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#btn-registro {
+    cursor: pointer;
+    font-weight: bold;
+    height: 52px;
+    width: 150px;
+    border: none;
+    margin-top: 20px;
+}
+
+.alert {
+    border-radius: .25rem;
+    border: 1px solid transparent;
+    margin-bottom: 1rem;
+    padding: .75rem 1.25rem;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+}
+
+.alert-info {
+    background-color: #d9edf7;
+    border-color: #bcdff1;
+    color: #31708f;
+}

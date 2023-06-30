@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    zoom: 80%;
+    background-color: rgb(241, 237, 233);
+}
+
+.tabla {
+    overflow-y: scroll;
+    height: 613px;
+    padding-right: 10px;
+}

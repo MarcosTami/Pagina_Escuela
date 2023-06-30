@@ -1,0 +1,63 @@
+.btn {
+  border-width: 0;
+  color: transparent;
+}
+
+.w-95 {
+  width: 95%;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.modal-xl {
+  width: 1140px;
+}
+
+.modal-content {
+  background-color: rgba(35, 113, 177, 0.726);
+}
+
+.items i {
+  color: rgba(35, 113, 177, 0.726);
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+/*Showcase*/
+.showcase {
+  width: 100%;
+  height: 700px;
+  background: url(imgshowcase/electro.jpg) no-repeat center center/cover;
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+  .cb2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-xl {
+    max-width: 1000px;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .cb2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-xl {
+    max-width: 1000px;
+  }
+}
+
+
+
+

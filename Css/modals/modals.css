@@ -1,0 +1,79 @@
+body {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.container-modals {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  width: 800px;
+  height: 250px;
+  margin: auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+
+.items {
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-gap: 10px;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.icon-wrapper, .project-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper i {
+  font-size: 100px;
+  color: #232426;
+  transform: translateY(0px);
+  transition: all 0.6s;
+}
+
+.icon-wrapper {
+  align-self: end;
+}
+
+.project-name {
+  align-self: start;
+}
+
+.project-name p {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #232426;
+  transform: translateY(0px);
+  transition: all 0.5s;
+}
+
+.items:hover {
+  border: 3px;
+}
+
+.items:hover .project-name p {
+  transform: translateY(-5px);
+}
+
+.items:hover .icon-wrapper i {
+  transform: translateY(5px);
+}
+
+span {
+  position: relative;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  display: inline-block;
+}/*# sourceMappingURL=modals.css.map */
