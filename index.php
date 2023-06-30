@@ -3,15 +3,15 @@
 
 <head>
   <!-- hero resources -->
-  <link rel="stylesheet" href="../Css/hero/hero.css">
+  <link rel="stylesheet" href="Css/hero/hero.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="../Javascript/hero/hero.js"></script>
+  <script src="Javascript/hero/hero.js"></script>
 
   <!-- index css -->
-  <link rel="stylesheet" href="../Css/index/index.css">
+  <link rel="stylesheet" href="Css/index/index.css">
 
-  <?php include("../Templates/head.php") ?>
+  <?php include("Templates/head.php") ?>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
       <div class="d-flex justify-content-center ">
         <div class="d-flex " style="height: 67px;">
           <a href="index.php">
-            <img class="img-fluid justify-content-start" src=" ../Logo escuela/logo.png" alt="Logo" style="width: 55px; height: 57;">
+            <img class="img-fluid justify-content-start" src="Imagenes/Logo escuela/logo.png" alt="Logo" style="width: 55px; height: 57;">
           </a>
         </div>
       </div>
@@ -65,22 +65,22 @@
         <div>
           <ul class="navbar-nav ">
             <li class="nav-item box">
-              <a class=" nav-link  fs-5" href="index.php">
+              <a class=" nav-link  fs-5" href="PHP Ciclos, inscripcion, matriculacion/index.php">
                 <p class="itemp">Inicio</p>
               </a>
             </li>
             <li class="nav-item box">
-              <a class="nav-link  fs-5" href="historia.php">
+              <a class="nav-link  fs-5" href="PHP Ciclos, inscripcion, matriculacion/historia.php">
                 <p class="itemp">Historia y actualidad</p>
               </a>
             </li>
             <li class="nav-item box">
-              <a class="nav-link  fs-5" href="ciclobasico.php">
+              <a class="nav-link  fs-5" href="PHP Ciclos, inscripcion, matriculacion/ciclobasico.php">
                 <p class="itemp">Ciclo basico</p>
               </a>
             </li>
             <li class="nav-item box">
-              <a class="nav-link  fs-5" href="ciclosuperior.php">
+              <a class="nav-link  fs-5" href="PHP Ciclos, inscripcion, matriculacion/ciclosuperior.php">
                 <p class="itemp">Ciclo superior</p>
               </a>
             </li>
@@ -90,9 +90,9 @@
                   <p class="itemp">Tramites</p>
                 </a>
                 <div class="dropup-content">
-                  <a href="inscripcion.php" style="color: #ffffff" class="itemp box">Inscripción</a>
-                  <a href="matriculacion.php" style="color: #ffffff" class="itemp box">Matriculación</a>
-                  <a href="ingresantes.php" style="color: #ffffff" class="itemp box">Ingresantes</a>
+                  <a href="PHP Ciclos, inscripcion, matriculacion/inscripcion.php" style="color: #ffffff" class="itemp box">Inscripción</a>
+                  <a href="PHP Ciclos, inscripcion, matriculacion/matriculacion.php" style="color: #ffffff" class="itemp box">Matriculación</a>
+                  <a href="PHP Ciclos, inscripcion, matriculacion/ingresantes.php" style="color: #ffffff" class="itemp box">Ingresantes</a>
                 </div>
               </div>
             </li>

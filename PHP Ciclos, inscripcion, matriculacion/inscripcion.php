@@ -60,7 +60,7 @@
     </div>
 
     <!-- footer -->
-    <?php include("templeates/footer.php"); ?>
+    <?php include("Templates/footer.php"); ?>
 
 </body>
 
