@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-11-2022 a las 20:45:20
--- Versión del servidor: 10.4.24-MariaDB
--- Versión de PHP: 8.1.6
+-- Tiempo de generación: 11-07-2023 a las 02:11:00
+-- Versión del servidor: 10.4.27-MariaDB
+-- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,7 +31,7 @@ CREATE TABLE `admin` (
   `id` int(255) NOT NULL,
   `usuario` varchar(25) NOT NULL,
   `contraseña` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `admin`
@@ -87,7 +87,7 @@ CREATE TABLE `alumnos` (
   `dni` int(50) NOT NULL,
   `telefono` int(50) NOT NULL,
   `contacto_emergencia` varchar(75) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `alumnos`
@@ -109,6 +109,36 @@ INSERT INTO `alumnos` (`id`, `nombre`, `apellido`, `fecha_nacimiento`, `curso`, 
 (69, 'Michael', 'Tvihaug', '2003-07-28', '7mo I', 469234613, 2147483647, '2494019713'),
 (70, 'Martin ', 'De Miguel', '2003-07-02', '7mo I', 45565820, 2147483647, '2494174682');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `inscriptos`
+--
+
+CREATE TABLE `inscriptos` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(45) NOT NULL,
+  `email` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `pdf`
+--
+
+CREATE TABLE `pdf` (
+  `id` int(1) NOT NULL,
+  `archivo` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `pdf`
+--
+
+INSERT INTO `pdf` (`id`, `archivo`) VALUES
+(1, 'uploads/planilla-inscripcion.pdf');
+
 --
 -- Índices para tablas volcadas
 --
@@ -126,6 +156,18 @@ ALTER TABLE `alumnos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `inscriptos`
+--
+ALTER TABLE `inscriptos`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `pdf`
+--
+ALTER TABLE `pdf`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -140,6 +182,12 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `alumnos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
+
+--
+-- AUTO_INCREMENT de la tabla `inscriptos`
+--
+ALTER TABLE `inscriptos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
